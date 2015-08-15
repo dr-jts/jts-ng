@@ -4,8 +4,9 @@ Prototype for an improved JTS API
 ## Goals
 
 * Accomodate different CRSes, especially geodetic
-* Regularize Operation patterns
-* Support more extensibility
+* Regularize Operation patterns (using language features to formalize)
+* Improve extensibility
+* Make JTS more modular (e.g. separate out core from optional algorithms)
 
 ## Principles
 
