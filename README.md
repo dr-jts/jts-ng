@@ -11,7 +11,7 @@ Prototype for an improved JTS API
 
 * Use interfaces for Geometry hierarchy
 * Code simplicity is more important than backwards compatibility
-* Target is Java 1.5 at least (but < Java 8)
+* Target is >= Java 1.5 (annotations, iterators, generics)
 
 ## Constraints
 
@@ -20,5 +20,6 @@ Prototype for an improved JTS API
 
 ## Assumptions
 
-* No need to mix / auto-convert between geometry and geodetic
+* No need to mix / auto-convert between geometry and geodetic (but explicit conversion is useful)
 * SFS 1.1 support only
+
