@@ -26,9 +26,9 @@ Prototype for an improved JTS API
 * Code simplicity is more important than backwards compatibility
 * Target is >= Java 1.5 
   * annotations, iterators, generics, varargs
-  * but < Java 8 (lambdas, streams) ? 
+  * but < Java 8 (no lambdas, streams) ? 
 * Unchecked Exceptions
-* Prefer dynamic to static structure
+* Prefer dynamic to static structure, and make structural metadata available as data
 * Where possible allow tolerances for operations (e.g. spatial predicates)
 * Tolerance is not precision - precision defines representation, whereas tolerance defines results
 
