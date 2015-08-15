@@ -10,6 +10,7 @@ Prototype for an improved JTS API
   * Geometry interfaces 
 * Improve modularity
   * separate out core from optional algorithms
+* Memory and execution efficiency
 
 ## Principles
 
