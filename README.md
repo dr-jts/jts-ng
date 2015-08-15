@@ -3,6 +3,7 @@ Prototype for an improved JTS API
 
 ## Goals
 
+* Main goal is to provide efficient, robust geometric algorithms in as flexible a way as possible
 * Keep API simple and easy-to-use 
 * Accomodate planar and geodetic geometry space
   * but maybe not to extent of arbitrary CRS
