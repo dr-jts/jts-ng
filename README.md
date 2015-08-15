@@ -18,6 +18,7 @@ Prototype for an improved JTS API
 * Code simplicity is more important than backwards compatibility
 * Target is >= Java 1.5 (annotations, iterators, generics)
   * but < Java 8 (lambdas, streams) ? 
+* Unchecked Exceptions
 
 ## Constraints
 
