@@ -3,16 +3,20 @@ Prototype for an improved JTS API
 
 ## Goals
 
-* Accomodate different CRSes, especially geodetic
+* Accomodate planar and geodetic geometry space
+  * but maybe not to extent of arbitrary CRS
 * Regularize Operation patterns (using language features to formalize)
 * Improve extensibility
-* Make JTS more modular (e.g. separate out core from optional algorithms)
+  * Geometry interfaces 
+* Improve modularity
+  * separate out core from optional algorithms
 
 ## Principles
 
 * Use interfaces for Geometry hierarchy
 * Code simplicity is more important than backwards compatibility
 * Target is >= Java 1.5 (annotations, iterators, generics)
+  * but < Java 8 (lambdas, streams) ? 
 
 ## Constraints
 
