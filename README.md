@@ -28,7 +28,7 @@ Prototype for an improved JTS API
   * annotations, iterators, generics, varargs
   * but < Java 8 (no lambdas, streams) ? 
 * Unchecked Exceptions
-* Prefer dynamic to static structure, and make structural metadata available as data
+* Prefer dynamic to static structure, and provide structural metadata available as data
 * Where possible allow tolerances for operations (e.g. spatial predicates)
 * Tolerance is not precision - precision defines representation, whereas tolerance defines results
 
