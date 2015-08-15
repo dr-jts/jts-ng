@@ -3,6 +3,7 @@ Prototype for an improved JTS API
 
 ## Goals
 
+* Keep API simple and easy-to-use 
 * Accomodate planar and geodetic geometry space
   * but maybe not to extent of arbitrary CRS
 * Regularize Operation patterns (using language features to formalize)
