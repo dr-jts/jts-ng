@@ -20,7 +20,8 @@ Prototype for an improved JTS API
 * Immutability whereever possible
 * Use interfaces for Geometry hierarchy
 * Code simplicity is more important than backwards compatibility
-* Target is >= Java 1.5 (annotations, iterators, generics)
+* Target is >= Java 1.5 
+  * annotations, iterators, generics, varargs
   * but < Java 8 (lambdas, streams) ? 
 * Unchecked Exceptions
 * Prefer dynamic to static structure
