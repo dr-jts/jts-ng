@@ -19,6 +19,7 @@ Prototype for an improved JTS API
 * Target is >= Java 1.5 (annotations, iterators, generics)
   * but < Java 8 (lambdas, streams) ? 
 * Unchecked Exceptions
+* Prefer dynamic to static structure
 
 ## Constraints
 
