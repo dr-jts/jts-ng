@@ -1,6 +1,8 @@
 # jts-ng
 Prototype for an improved JTS API
 
+> "A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away." - Antoine de Saint-Exupery
+
 ## Goals
 
 * Main goal is to provide efficient, robust geometric algorithms in as flexible a way as possible
