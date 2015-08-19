@@ -1,4 +1,4 @@
-package jts.api.geom;
+package jts.geom;
 
 public interface MultiPolygon extends GeometryCollection {
 

@@ -1,6 +1,6 @@
-package jts.api.geom.util;
+package jts.geom.util;
 
-import jts.api.geom.Coord;
+import jts.geom.Coord;
 
 public interface CoordVisitor {
 	boolean visit(Coord coord);

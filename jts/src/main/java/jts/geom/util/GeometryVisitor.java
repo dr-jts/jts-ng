@@ -1,6 +1,6 @@
-package jts.api.geom.util;
+package jts.geom.util;
 
-import jts.api.geom.Geometry;
+import jts.geom.Geometry;
 
 public interface GeometryVisitor {
 	boolean visit(Geometry geom);

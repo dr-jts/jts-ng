@@ -1,7 +1,7 @@
-package jts.api.geom;
+package jts.geom;
 
-import jts.api.geom.util.CoordVisitor;
-import jts.api.geom.util.GeometryVisitor;
+import jts.geom.util.CoordVisitor;
+import jts.geom.util.GeometryVisitor;
 
 public interface Geometry {
 	
