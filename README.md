@@ -42,3 +42,20 @@ Prototype for an improved JTS API
 * No need to mix / auto-convert between geometry and geodetic (but explicit conversion is useful)
 * SFS 1.1 support only
 
+## Summary of Differences with JTS 1
+
+### Geometry model
+
+* Geometry types, GeometryFactory are interfaces
+* Geometry types have accessor methods only.  (Operations are provided by other classes)  TENTATIVE
+* Realm class provides metadata about manifold (planar or spheriodal), coordinate system (geodetic) and precision model
+
+### Operations
+
+* Operations are classes which implement functions involving at least one Geometry to a Geometry or scalar result
+* May be multivalued (in particular, may return both a Geometry and a scalar value)
+* Wherever possible operations return a Geometry representing the result or location of the operation
+* All operations are under the op package
+* Implement the Operation marker interface
+* Explicitly separate computation phase from result provision phase, by returning a Result object from which one or more results can be read
+* 
