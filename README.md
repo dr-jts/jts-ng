@@ -5,13 +5,13 @@ Prototype for an improved JTS API
 
 ## Goals
 
-* Main goal is to provide efficient, robust geometric algorithms in as flexible a way as possible
-* Keep API simple and easy-to-use 
+* Provide efficient, robust geometric algorithms in as flexible a way as possible
+* Simple and easy-to-use API
 * Accomodate planar and geodetic geometry space
-  * but maybe not to extent of arbitrary CRS
+  * but not to extent of arbitrary CRS - this must be provided externally
 * Regularize Operation patterns (using language features to formalize)
 * Improve extensibility
-  * Geometry interfaces 
+  * `Geometry` interfaces 
 * Improve modularity
   * separate out core from optional algorithms
 * Memory efficiency 
@@ -42,3 +42,23 @@ Prototype for an improved JTS API
 * No need to mix / auto-convert between geometry and geodetic (but explicit conversion is useful)
 * SFS 1.1 support only
 
+## Summary of Differences with JTS 1
+
+### Geometry model
+
+* `Geometry` types and `GeometryFactory` are interfaces
+* Geometry types have accessor methods only.  
+* Operations are provided by `Operation` classes (TENTATIVE)
+* `Realm` class provides metadata about manifold (planar or spheriodal), coordinate system (geodetic) and precision model
+
+### Operations
+
+* `Operation`s are classes which implement functions involving at least one `Geometry`, returning a geometric or scaler result
+* Implement the `Operation` marker interface
+* All operations are under the `op` package
+* Explicitly separates computation phases: setup, execution, and result extraction.
+* Results may be multivalued (in particular, may return both a `Geometry` and a scalar value)
+* Where possible operations return a `Geometry` representing the result or location of the operation, to allow visualization
+* Result extraction is done from a `Result` object.  `Result` subclasses allow one or more values to be returned.
+* Various kinds of results: `GeometryResult`, `ValueResult`, `GeometryValue` supports both geometry and value.  For more complex/numerous results operation provides custom subclass.
+* 
