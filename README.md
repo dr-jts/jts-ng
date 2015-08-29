@@ -47,7 +47,8 @@ Prototype for an improved JTS API
 ### Geometry model
 
 * `Geometry` types and `GeometryFactory` are interfaces
-* Geometry types have accessor methods only.  (Operations are provided by other classes)  TENTATIVE
+* Geometry types have accessor methods only.  
+** Operations are provided by other classes (TENTATIVE)
 * `Realm` class provides metadata about manifold (planar or spheriodal), coordinate system (geodetic) and precision model
 
 ### Operations
