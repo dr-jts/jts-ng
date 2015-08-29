@@ -48,16 +48,17 @@ Prototype for an improved JTS API
 
 * `Geometry` types and `GeometryFactory` are interfaces
 * Geometry types have accessor methods only.  
-** Operations are provided by other classes (TENTATIVE)
+* Operations are provided by `Operation` classes (TENTATIVE)
 * `Realm` class provides metadata about manifold (planar or spheriodal), coordinate system (geodetic) and precision model
 
 ### Operations
 
-* `Operation`s are classes which implement functions involving at least one `Geometry` to a `Geometry` or scalar result
+* `Operation`s are classes which implement functions involving at least one `Geometry`, returning a geometric or scaler result
 * May be multivalued (in particular, may return both a `Geometry` and a scalar value)
-* Wherever possible operations return a `Geometry` representing the result or location of the operation
-* All operations are under the op package
+* Where possible operations return a `Geometry` representing the result or location of the operation
+* All operations are under the `op` package
 * Implement the `Operation` marker interface
-* Explicitly separates computation phases: setup, execution, and resutl extraction.
-* Result extraction is done from `Result` object.  `Result` subclasses allow one or more results can be read
+* Explicitly separates computation phases: setup, execution, and result extraction.
+* Result extraction is done from a `Result` object.  `Result` subclasses allow one or more values to be returned.
+* Various kinds of results: `GeometryResult`, `ValueResult`, `GeometryValue` supports both geometry and value.  For more complex/numerous results operation provides custom subclass.
 * 
