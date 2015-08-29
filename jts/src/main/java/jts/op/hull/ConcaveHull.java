@@ -2,8 +2,9 @@ package jts.op.hull;
 
 import jts.geom.Geometry;
 import jts.op.GeometryResult;
+import jts.op.Operation;
 
-public class ConcaveHull {
+public class ConcaveHull implements Operation {
 	
 	public ConcaveHull(Geometry geom) {
 		

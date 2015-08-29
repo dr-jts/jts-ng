@@ -1,4 +1,4 @@
-package jts.geom;
+package jts.geom.struct;
 
 public class Envelope {
 

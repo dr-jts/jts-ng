@@ -1,5 +1,6 @@
 package jts.geom;
 
+import jts.geom.struct.Envelope;
 import jts.geom.util.CoordVisitor;
 import jts.geom.util.GeometryVisitor;
 
