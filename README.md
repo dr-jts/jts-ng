@@ -54,11 +54,11 @@ Prototype for an improved JTS API
 ### Operations
 
 * `Operation`s are classes which implement functions involving at least one `Geometry`, returning a geometric or scaler result
-* May be multivalued (in particular, may return both a `Geometry` and a scalar value)
-* Where possible operations return a `Geometry` representing the result or location of the operation
-* All operations are under the `op` package
 * Implement the `Operation` marker interface
+* All operations are under the `op` package
 * Explicitly separates computation phases: setup, execution, and result extraction.
+* Results may be multivalued (in particular, may return both a `Geometry` and a scalar value)
+* Where possible operations return a `Geometry` representing the result or location of the operation, to allow visualization
 * Result extraction is done from a `Result` object.  `Result` subclasses allow one or more values to be returned.
 * Various kinds of results: `GeometryResult`, `ValueResult`, `GeometryValue` supports both geometry and value.  For more complex/numerous results operation provides custom subclass.
 * 
