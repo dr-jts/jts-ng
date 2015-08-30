@@ -1,9 +1,10 @@
-package jts.geom.builder;
+package example.geom.builder;
 
 import jts.geom.MultiPolygon;
 import jts.geom.Polygon;
+import jts.geom.builder.GeometryBuilder;
 
-public class GeomBuilderTest {
+public class GeomBuilderExample {
 
 	public void testMultiPolygon() {
 		MultiPolygon geom = (new GeometryBuilder()).multiPolygon()
@@ -13,10 +14,10 @@ public class GeomBuilderTest {
 				.build();
 	}
 	public void testPolygon() {
-		Polygon poly = GeomBuilder
+		Polygon poly = (new GeometryBuilder())
 				.polygon()
 				.build();
-		Polygon geom = GeomBuilder
+		Polygon poly2 = (new GeometryBuilder())
 				.polygon()
 				.hole()
 				.hole()
